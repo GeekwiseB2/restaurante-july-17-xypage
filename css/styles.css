@@ -18,20 +18,33 @@ body {
   text-shadow:1px 1px 2px #000000;
 }
 
-
-/*THIS IS FILLER, DELETE ALL OF IT*/
-.filler-content {
-  width:100%;
+/*Review*/
+#review {
+  background-image:url(../img/food_review.jpg);
   height:500px;
-  margin-bottom:20px;
-  background-color: #222222;
+  background-position:center;
+  background-size:cover;
+}
+.review-container {
+  height:500px;
+}
+.review-flex {
   display:flex;
   align-items:center;
-  justify-content:center;
+  height:500px;
+}
+.review-background {
   text-align:center;
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius:5px;
+  padding:10px;
 }
-.inside-filler-header {
-  font-weight: bold;
-  color:#453e96;
+.review-header {
+  color:#f8512f;
+  font-family:'lobster', cursive;
+  font-size:4em;
 }
-/*END OF THE FILLER, DELETE TO HERE*/
+.review-text {
+  color:#FFFFFF;
+  font-size:1.8em;
+}
