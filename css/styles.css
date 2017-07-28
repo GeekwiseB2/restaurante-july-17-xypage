@@ -55,3 +55,62 @@ body {
 .review-content {
   text-shadow: 1px 1px 2px #333;
 }
+
+/*Our story*/
+.lobster-font {
+  font-family:'Lobster', cursive;
+  color: #F8512F;
+  text-shadow: 1px 1px 2px #313;
+  font-size: 5em;
+}
+#our-story {
+  margin-top:10%;
+  margin-bottom:10%;
+}
+.our-story-h3 {
+  margin-top:0px;
+}
+.the-year {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  position: absolute;
+  z-index: 0;
+  color: rgba(51,51,51,0.1);
+  font-size: 170px;
+
+/*Review*/
+#review {
+  background-image:url(../img/food_review.jpg);
+  height:500px;
+  background-position:center;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.review-container {
+  height:500px;
+}
+.review-flex {
+  display:flex;
+  align-items:center;
+  height:500px;
+}
+.review-background {
+  text-align:center;
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius:5px;
+  padding:20px;
+}
+.review-header {
+  color:#F8512F;
+  font-family:'lobster', cursive;
+  font-size:4em;
+}
+.review-text {
+  color:#ECECEC;
+  font-size:1.85em;
+  font-family:'Lato', sans-serif;
+  font-weight:300;
+}
+.review-content {
+  text-shadow: 1px 1px 2px #333;
+}
