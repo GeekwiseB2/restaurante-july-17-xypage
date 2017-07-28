@@ -19,40 +19,41 @@ body {
   text-shadow:1px 1px 2px #000000;
 }
 
-/*Hero*/
-button.btn-danger:hover {
-  background-color: #D34326;
-  border-color: #D34326;
-}
-button.btn-danger {
-  background-color: #F8512F;
-  border-color: #F8512F;
-}
-.item {
+/*Review*/
+#review {
+  background-image:url(../img/food_review.jpg);
   height:500px;
+  background-position:center;
   background-size:cover;
-  background-position: center;
+  background-attachment: fixed;
 }
-.carousel-caption {
-  margin-bottom:45px;
-}
-#slide1 {
-  background-image: url(../img/wood-2.jpg);
-}
-.carousel-logo {
+.review-container {
   height:500px;
+}
+.review-flex {
   display:flex;
   align-items:center;
-  justify-content: center;
+  height:500px;
 }
-.carousel-logo-img {
-  height:250px;
+.review-background {
+  text-align:center;
+  background-color:rgba(0, 0, 0, 0.5);
+  border-radius:5px;
+  padding:20px;
 }
-#slide2 {
-  background-image: url(../img/restaurant-2.jpg);
+.review-header {
+  color:#F8512F;
+  font-family:'lobster', cursive;
+  font-size:4em;
 }
-#slide3 {
-  background-image:url(../img/farm-2.jpg)
+.review-text {
+  color:#ECECEC;
+  font-size:1.85em;
+  font-family:'Lato', sans-serif;
+  font-weight:300;
+}
+.review-content {
+  text-shadow: 1px 1px 2px #333;
 }
 
 /*Our story*/
