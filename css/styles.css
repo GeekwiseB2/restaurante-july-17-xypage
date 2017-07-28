@@ -2,8 +2,6 @@ body {
   margin: 0px;
   padding:0px;
 }
-
-/*Navbar*/
 .navbar-inverse {
   background-color: transparent;
   border:none;
@@ -19,6 +17,64 @@ body {
   text-shadow:1px 1px 2px #000000;
 }
 
+/*Hero*/
+button.btn-danger:hover {
+  background-color: #D34326;
+  border-color: #D34326;
+}
+button.btn-danger {
+  background-color: #F8512F;
+  border-color: #F8512F;
+}
+.item {
+  height:500px;
+  background-size:cover;
+  background-position: center;
+}
+.carousel-caption {
+  margin-bottom:45px;
+}
+#slide1 {
+  background-image: url(../img/wood-2.jpg);
+}
+.carousel-logo {
+  height:500px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.carousel-logo-img {
+  height:250px;
+}
+#slide2 {
+  background-image: url(../img/restaurant-2.jpg);
+}
+#slide3 {
+  background-image:url(../img/farm-2.jpg)
+}
+
+/*Our story*/
+.lobster-font {
+  font-family:'Lobster', cursive;
+  color: #F8512F;
+  text-shadow: 1px 1px 2px #313;
+  font-size: 5em;
+}
+#our-story {
+  margin-top:10%;
+  margin-bottom:10%;
+}
+.our-story-h3 {
+  margin-top:0px;
+}
+.the-year {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  position: absolute;
+  z-index: 0;
+  color: rgba(51,51,51,0.1);
+  font-size: 170px;
+}
 /*Review*/
 #review {
   background-image:url(../img/food_review.jpg);
@@ -54,4 +110,90 @@ body {
 }
 .review-content {
   text-shadow: 1px 1px 2px #333;
+}
+
+/*menu*/
+#menu {
+  background-image: url(../img/black_linen.png);
+  height:650px;
+}
+@media only screen and (max-width:767px) {
+  #menu {
+    height:1250px;
+  }
+}
+#menu h1 {
+  font-family:'Lobster', cursive;
+  color:#fff;
+  font-size: 5em;
+}
+.menu-nav-tabs {
+  border-bottom-color:transparent;
+}
+.food {
+  background-color: #fff;
+  height: 425px;
+  overflow: auto;
+  padding:8px 12px;
+  border-color:#FFF;
+}
+#menu a {
+  color:#F8512F;
+  font-weight:600;
+  text-transform: uppercase;
+}
+#menu .menu-li>a:hover {
+  background-color:rgba(255,255,255,0.6);
+  border-color:transparent;
+}
+#menu .menu-li.active>a:hover {
+  background-color: #FFF;
+  border-color:#FFF;
+}
+.fade {
+  transition-duration: .5s;
+}
+
+/*contact us*/
+.red {
+  color:#FF0000;
+}
+#contact-us {
+  background-color: #F8512F;
+  height:700px;
+}
+.contact-h1 {
+  font-weight: 600;
+}
+#contact-us>.col-xs-8>.row>.col-xs-12{
+  margin:40px auto;
+}
+#contact-us h1, #contact-us p {
+  color:#FFF;
+}
+form {
+  border:solid 1px #FFF;
+  background-color: #FF6633;
+  padding:15px 10px;
+  display:flex;
+  flex-direction:column;
+  max-width: 360px;
+}
+.form-submitter {
+  align-self:center;
+}
+label {
+  color:#FFF;
+}
+.contact-map {
+  width:350px;
+  height:150px;
+}
+@media only screen and (max-width:767px) {
+  #contact-us {
+    height:1010px;
+  }
+  form {
+    margin-bottom:20px;
+  }
 }

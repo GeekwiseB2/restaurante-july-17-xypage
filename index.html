@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
 	<!-- Header start -->
 	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
 	  <div class="container-fluid">
@@ -22,24 +23,90 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="#"><img src="img/name-01.png" alt="Restaurante"></a>
+	      <a class="navbar-brand" href="#home"><img src="img/name-01.png" alt="Restaurante"></a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#">Our Story</a></li>
+	        <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#our-story">Our Story</a></li>
 	        <li><a href="#review">Review</a></li>
-	        <li><a href="#">Menu</a></li>
-	        <li><a href="#">Contact Us</a></li>
+	        <li><a href="#menu">Menu</a></li>
+	        <li><a href="#contact-us">Contact Us</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 	<!-- Header end -->
 
-	<!-- Beginning of review -->
+	<!-- carousel begin  -->
+
+		<div id="carousel-example-generic home" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active" id="slide1">
+		      <div class="carousel-logo">
+		      	<img src="img/logo-01.png" alt="Restaurante Logo" class="carousel-logo-img img-responsive">
+		      </div>
+		    </div>
+
+		    <div class="item" id="slide2">
+		      <div class="carousel-caption">
+		        <h3>Eat Local</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti nihil eveniet architecto cumque sit unde sequi asperiores, possimus, labore quod magnam nam, nulla odit beatae officia laboriosam harum natus numquam?</p>
+						<button type="button" class="btn btn-lg btn-danger">Learn More</button>
+		      </div>
+		    </div>
+
+				<div class="item" id="slide3">
+					<div class="carousel-caption text-center">
+						<h1>From farm to table.</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem hic officiis accusamus sequi maiores repudiandae dolore ab culpa, porro est inventore, neque, cum? Maxime, incidunt! Rem, hic. Natus, vero.</p>
+						<button type="button" class="btn btn-danger btn-lg">Browse gallery</button>
+					</div>
+			 </div>
+		  </div>
+
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+	<!-- carousel end -->
+
+	<!-- Our story begin -->
+	<div class="container" id="our-story">
+		<div class="row">
+			<div class="col-sm-6">
+				<h1 class="lobster-font">Our Story</h1>
+				<h3 class="our-story-h3">One Man. One Story.</h3>
+			</div>
+			<div class="col-sm-6">
+				<h1 class="the-year">1989</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ad eligendi adipisci inventore unde impedit alias, nesciunt. Ab recusandae natus cumque nostrum doloribus veniam unde consectetur culpa fuga, rem magni.</p>
+				<p>Est, numquam culpa! Obcaecati ratione, ab non minus molestias suscipit excepturi nemo ducimus. Impedit, in quae consectetur? Quidem enim, ea perferendis maxime quasi recusandae debitis quam sapiente, dolores accusantium qui!</p>
+				<p>In possimus veniam sequi corporis officia fuga pariatur natus, ex consectetur provident id at laboriosam voluptas inventore deleniti accusamus sit totam aliquam doloribus itaque nihil voluptatum debitis placeat? Quae, architecto.</p>
+				<p>Debitis laboriosam quasi distinctio nostrum quibusdam ullam facilis commodi, minima porro ducimus error nulla veritatis sed natus ad qui optio quam vel inventore iusto, autem. Incidunt corporis est, porro sunt.</p>
+			</div>
+		</div>
+	</div>
+	<!-- our story end -->
+
+<!-- Beginning of review -->
 	<div class="container-fluid" id="review">
 		<div class="row">
 			<div class="col-xs-8 col-xs-offset-2 review-container">
@@ -54,8 +121,193 @@
 	</div>
 	<!-- End of review -->
 
+	<!-- Beginning of menu -->
+	<div class="container-fluid" id="menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<h1 class="text-center">Menu</h1>
+
+					<div> <!-- Menu wrapper -->
+
+				  <!-- Nav tabs -->
+					  <ul class="nav nav-tabs nav-justified menu-nav-tabs" role="tablist">
+					    <li role="presentation" class="active menu-li"><a href="#appetizer" aria-controls="home" role="tab" data-toggle="tab">Appetizer</a></li>
+					    <li role="presentation" class="menu-li"><a href="#lunch" aria-controls="profile" role="tab" data-toggle="tab">Lunch</a></li>
+					    <li role="presentation" class="menu-li"><a href="#dinner" aria-controls="messages" role="tab" data-toggle="tab">Dinner</a></li>
+					    <li role="presentation" class="menu-li"><a href="#dessert" aria-controls="settings" role="tab" data-toggle="tab">Dessert</a></li>
+					  </ul>
+
+					  <!-- Tab panes -->
+					  <div class="tab-content">
+					    <div role="tabpanel" class="tab-pane fade in active" id="appetizer"><!-- Appetizer menu wrapper -->
+
+					    		<div class="col-sm-3 col-xs-6 food">
+					    			<img src="img/dip.jpg" alt="Dip appetizer" class="img-responsive img-thumbnail">
+					    			<h3 class="text-center">Appetizer 1</h3>
+					    			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum earum praesentium, architecto ipsa impedit voluptates quae. Illo provident, numquam recusandae inventore pariatur saepe facere sapiente corporis possimus, voluptate necessitatibus aliquam!</p>
+					    		</div>
+
+					    		<div class="col-sm-3 col-xs-6 food">
+					    			<img src="img/eggplant.jpg" alt="Eggplant appetizer" class="img-responsive img-thumbnail">
+					    			<h3 class="text-center">Appetizer 2</h3>
+					    			<p class="text-justify">Mollitia veritatis recusandae adipisci laborum deserunt qui, voluptatem culpa, velit, commodi voluptates inventore! Voluptates at numquam temporibus sunt asperiores minima eum amet, cupiditate nobis, iure deleniti excepturi, odit molestiae blanditiis.</p>
+					    		</div>
+
+					    		<div class="col-sm-3 col-xs-6 food">
+					    			<img src="img/meat.jpg" alt="Meat appetizer" class="img-responsive img-thumbnail">
+					    			<h3 class="text-center">Appetizer 3</h3>
+					    			<p class="text-justify">Necessitatibus sequi nulla natus consequatur dolor inventore eligendi ea quae vero optio tenetur non delectus voluptatibus illum dolore corporis similique quas error, cumque quod quis soluta earum laborum. Mollitia, ratione.</p>
+					    		</div>
+
+					    		<div class="col-sm-3 col-xs-6 food">
+					    			<img src="img/bruschetta.jpg" alt="Bruschetta appetizer" class="img-responsive img-thumbnail">
+					    			<h3 class="text-center">Appetizer 4</h3>
+					    			<p class="text-justify">Velit dignissimos, vel quasi odio minus ducimus alias consectetur eius ex perspiciatis rem fugit assumenda necessitatibus neque enim molestias quaerat cum porro nemo aspernatur optio placeat doloremque nostrum temporibus? Architecto.</p>
+					    		</div>
+
+					    </div><!-- End of appetizer menu wrapper -->
+					    <div role="tabpanel" class="tab-pane fade" id="lunch"><!-- Beginning of lunch wrapper -->
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/lunch1.jpg" alt="Slider" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Lunch 1</h3>
+									<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum earum praesentium, architecto ipsa impedit voluptates quae. Illo provident, numquam recusandae inventore pariatur saepe facere sapiente corporis possimus, voluptate necessitatibus aliquam!</p>
+								</div>
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/lunch2.jpg" alt="Grilled cheese" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Lunch 2</h3>
+									<p class="text-justify">Mollitia veritatis recusandae adipisci laborum deserunt qui, voluptatem culpa, velit, commodi voluptates inventore! Voluptates at numquam temporibus sunt asperiores minima eum amet, cupiditate nobis, iure deleniti excepturi, odit molestiae blanditiis.</p>
+								</div>
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/lunch3.jpg" alt="Bacon burger" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Lunch 3</h3>
+									<p class="text-justify">Necessitatibus sequi nulla natus consequatur dolor inventore eligendi ea quae vero optio tenetur non delectus voluptatibus illum dolore corporis similique quas error, cumque quod quis soluta earum laborum. Mollitia, ratione.</p>
+								</div>
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/lunch4.jpg" alt="Turkey burger" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Lunch 4</h3>
+									<p class="text-justify">Velit dignissimos, vel quasi odio minus ducimus alias consectetur eius ex perspiciatis rem fugit assumenda necessitatibus neque enim molestias quaerat cum porro nemo aspernatur optio placeat doloremque nostrum temporibus? Architecto.</p>
+								</div>
+
+					    </div><!-- End of lunch wrapper -->
+					    <div role="tabpanel" class="tab-pane fade" id="dinner"><!-- Beginning of dinner wrapper -->
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/dinner1.jpg" alt="Meat pile with cheese" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Dinner 1</h3>
+									<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum earum praesentium, architecto ipsa impedit voluptates quae. Illo provident, numquam recusandae inventore pariatur saepe facere sapiente corporis possimus, voluptate necessitatibus aliquam!</p>
+								</div>
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/dinner2.jpg" alt="Steak with egg and bacon bits" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Dinner 2</h3>
+									<p class="text-justify">Mollitia veritatis recusandae adipisci laborum deserunt qui, voluptatem culpa, velit, commodi voluptates inventore! Voluptates at numquam temporibus sunt asperiores minima eum amet, cupiditate nobis, iure deleniti excepturi, odit molestiae blanditiis.</p>
+								</div>
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/dinner3.jpg" alt="Chicken" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Dinner 3</h3>
+									<p class="text-justify">Necessitatibus sequi nulla natus consequatur dolor inventore eligendi ea quae vero optio tenetur non delectus voluptatibus illum dolore corporis similique quas error, cumque quod quis soluta earum laborum. Mollitia, ratione.</p>
+								</div>
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/dinner4.jpg" alt="Salad" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Dinner 4</h3>
+									<p class="text-justify">Velit dignissimos, vel quasi odio minus ducimus alias consectetur eius ex perspiciatis rem fugit assumenda necessitatibus neque enim molestias quaerat cum porro nemo aspernatur optio placeat doloremque nostrum temporibus? Architecto.</p>
+								</div>
+
+							</div><!-- End of dinner wrapper -->
+					    <div role="tabpanel" class="tab-pane fade" id="dessert"><!-- Beginning of dessert wrapper -->
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/dessert1.jpg" alt="Strawberry dessert" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Dessert 1</h3>
+									<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum earum praesentium, architecto ipsa impedit voluptates quae. Illo provident, numquam recusandae inventore pariatur saepe facere sapiente corporis possimus, voluptate necessitatibus aliquam!</p>
+								</div>
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/dessert2.jpg" alt="Chocolate dessert" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Dessert 2</h3>
+									<p class="text-justify">Mollitia veritatis recusandae adipisci laborum deserunt qui, voluptatem culpa, velit, commodi voluptates inventore! Voluptates at numquam temporibus sunt asperiores minima eum amet, cupiditate nobis, iure deleniti excepturi, odit molestiae blanditiis.</p>
+								</div>
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/dessert3.jpg" alt="Raspberry dessert" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Dessert 3</h3>
+									<p class="text-justify">Necessitatibus sequi nulla natus consequatur dolor inventore eligendi ea quae vero optio tenetur non delectus voluptatibus illum dolore corporis similique quas error, cumque quod quis soluta earum laborum. Mollitia, ratione.</p>
+								</div>
+
+								<div class="col-sm-3 col-xs-6 food">
+									<img src="img/dessert4.jpg" alt="Chocolate donut thing" class="img-responsive img-thumbnail">
+									<h3 class="text-center">Dessert 4</h3>
+									<p class="text-justify">Velit dignissimos, vel quasi odio minus ducimus alias consectetur eius ex perspiciatis rem fugit assumenda necessitatibus neque enim molestias quaerat cum porro nemo aspernatur optio placeat doloremque nostrum temporibus? Architecto.</p>
+								</div>
+
+							</div><!-- End of dessert wrapper -->
+					  </div>
+
+					</div> <!-- Menu Wrapper end -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of menu -->
+
+	<!-- contact us -->
+	<div class="container-fluid" id="contact-us">
+		<div class="col-xs-8 col-xs-offset-2">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="text-uppercase contact-h1">contact us</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus officia aut dolorum, suscipit error nobis quam sed corrupti! Doloribus commodi animi veritatis porro, ut optio repellat tempore id eaque placeat!</p>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-sm-5"><!-- Form begin -->
+					<form>
+						<div class="form-group">
+					    <label for="exampleInputName1">Name: <span class="red">*</span></label>
+					    <input required type="text" id="exampleInputName1" class="form-control" placeholder="Name">
+					  </div>
+					  <div class="form-group">
+					    <label for="exampleInputEmail1">Email: <span class="red">*</span></label>
+					    <input required type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+					  </div>
+						<div class="form-group">
+					    <label for="exampleInputPassword1">Password: <span class="red">*</span></label>
+					    <input required type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+					  </div>
+						<div class="form-group">
+							<label for="textArea">Message: <span class="red">*</span></label>
+							<textarea required class="form-control" rows="3"></textarea>
+						</div>
+						<div class="form-group">
+							<label>
+								<input type="checkbox" required> I'm not a robot.
+							</label>
+						</div>
+					  <button type="submit" class="btn btn-default btn-md form-submitter">Send Message!</button>
+						<p class="text-center">All fields marked <span class="red">*</span> are mandatory</p>
+					</form>
+				</div><!-- Form end -->
+
+				<div class="col-sm-6 col-sm-offset-1">
+					<p><span class="text-uppercase"><strong>restaurante</strong></span><br>123 Fulton S<br>Fresno, CA 93728<br>P:(123)456-7890</p>
+					<iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.604240146291!2d-119.78796568518065!3d36.732064979962715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809460a5cfdf4b6b%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1501281357074" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End of contact us -->
+
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/nav.js"></script>
 </body>
 </html>
