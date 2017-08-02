@@ -1,7 +1,10 @@
 body {
   margin: 0px;
   padding:0px;
+  position:relative;
 }
+
+/*header*/
 .navbar-inverse {
   background-color: transparent;
   border:none;
