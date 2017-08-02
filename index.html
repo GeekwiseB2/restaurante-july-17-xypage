@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Lobster|Playfair+Display" rel="stylesheet">
 </head>
-<body>
+<body data-spy="scroll" data-target="#bs-example-navbar-collapse-1" data-offset="50">
 
 
 	<!-- Header start -->
@@ -42,48 +42,50 @@
 
 	<!-- carousel begin  -->
 
-		<div id="carousel-example-generic home" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		  </ol>
+		<div id="home">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
 
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox">
-		    <div class="item active" id="slide1">
-		      <div class="carousel-logo">
-		      	<img src="img/logo-01.png" alt="Restaurante Logo" class="carousel-logo-img img-responsive">
-		      </div>
-		    </div>
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active" id="slide1">
+			      <div class="carousel-logo">
+			      	<img src="img/logo-01.png" alt="Restaurante Logo" class="carousel-logo-img img-responsive">
+			      </div>
+			    </div>
 
-		    <div class="item" id="slide2">
-		      <div class="carousel-caption">
-		        <h3>Eat Local</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti nihil eveniet architecto cumque sit unde sequi asperiores, possimus, labore quod magnam nam, nulla odit beatae officia laboriosam harum natus numquam?</p>
-						<button type="button" class="btn btn-lg btn-danger">Learn More</button>
-		      </div>
-		    </div>
+			    <div class="item" id="slide2">
+			      <div class="carousel-caption">
+			        <h3>Eat Local</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti nihil eveniet architecto cumque sit unde sequi asperiores, possimus, labore quod magnam nam, nulla odit beatae officia laboriosam harum natus numquam?</p>
+							<button type="button" class="btn btn-lg btn-danger">Learn More</button>
+			      </div>
+			    </div>
 
-				<div class="item" id="slide3">
-					<div class="carousel-caption text-center">
-						<h1>From farm to table.</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem hic officiis accusamus sequi maiores repudiandae dolore ab culpa, porro est inventore, neque, cum? Maxime, incidunt! Rem, hic. Natus, vero.</p>
-						<button type="button" class="btn btn-danger btn-lg">Browse gallery</button>
-					</div>
-			 </div>
-		  </div>
+					<div class="item" id="slide3">
+						<div class="carousel-caption text-center">
+							<h1>From farm to table.</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem hic officiis accusamus sequi maiores repudiandae dolore ab culpa, porro est inventore, neque, cum? Maxime, incidunt! Rem, hic. Natus, vero.</p>
+							<button type="button" class="btn btn-danger btn-lg">Browse gallery</button>
+						</div>
+				 </div>
+			  </div>
 
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
+			  <!-- Controls -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
 		</div>
 
 	<!-- carousel end -->
@@ -308,6 +310,5 @@
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/nav.js"></script>
 </body>
 </html>
